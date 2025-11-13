@@ -1,0 +1,42 @@
+﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
+using EntityLayer.Concrete;
+using System.Collections.Generic;
+
+namespace BusinessLayer.Concrete
+{
+    public class AdressManager : IAdressService
+    {
+        IAdressDal _adressDal;
+
+        public AdressManager(IAdressDal adressDal)
+        {
+            _adressDal = adressDal;
+        }
+
+        public void Delete(Adress t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Adress GetById(int id)
+        {
+           return _adressDal.GetById(id);
+        }
+
+        public List<Adress> GetListAll()
+        {
+            return _adressDal.GetListAll();
+        }
+
+        public void Insert(Adress t)
+        {
+           _adressDal.Insert(t);
+        }
+
+        public void Update(Adress t)
+        {
+          _adressDal.Update(t);
+        }
+    }
+}

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.Abstract;
@@ -13,6 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AgriculturePresentation
 {
@@ -32,6 +32,19 @@ namespace AgriculturePresentation
             services.AddScoped<IServiceDal,EfServiceDal>();
             services.AddScoped<ITeamService, TeamManager>();
             services.AddScoped<ITeamDal, EfTeamDal>();
+            services.AddScoped<IAnnouncementService, AnnouncementManager>();
+            services.AddScoped<IAnnouncementDal, EfAnnouncementDal>();
+            services.AddScoped<IImageService, ImageManager>();
+            services.AddScoped<IImageDal, EfImageDal>();
+            services.AddScoped<IAdressService, AdressManager>();
+            services.AddScoped<IAdressDal, EfAdressDal>();
+            services.AddScoped<IContactService, ContactManager>();
+            services.AddScoped<IContactDal, EfContactDal>();
+            services.AddScoped<ISocialMediaService, SocialMediaManager>();
+            services.AddScoped<ISocialMediaDal, EfSocialMediaDal>();
+            services.AddScoped<IAboutService, AboutManager>();
+            services.AddScoped<IAboutDal, EfAboutDal>();
+
 
             services.AddDbContext<AgricultureContext>();
             services.AddControllersWithViews();
