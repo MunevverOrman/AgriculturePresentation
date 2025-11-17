@@ -10,6 +10,7 @@ Amaç, OOP mantığını gerçek bir projede uygulayarak katmanlı mimarinin nas
 OOP yapısını uygulayarak profesyonel bir proje geliştirmek
 
 N katmanlı mimariyi pratikte öğrenmek
+
 SQL veri tabanı, prosedür ve tetikleyicilerle çalışma deneyimi kazanmak
 
 Admin paneli ile tüm site içeriğini yönetilebilir hale getirmek
