@@ -7,6 +7,7 @@ Bu proje, Udemy’de Murat Yücedağ eğitmenliğinde yayınlanan
 Amaç, OOP mantığını gerçek bir projede uygulayarak katmanlı mimarinin nasıl çalıştığını gözlemlemek ve yönetilebilir bir web sitesi geliştirmektir.
 
 🎯 Projenin Amacı
+
 OOP yapısını uygulayarak profesyonel bir proje geliştirmek
 
 N katmanlı mimariyi pratikte öğrenmek
