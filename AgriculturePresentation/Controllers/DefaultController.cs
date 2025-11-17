@@ -12,9 +12,10 @@ using System.Threading.Tasks;
 
 namespace AgriculturePresentation.Controllers
 {
-    
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
+       
         private readonly IContactService _contactService;
 
         public DefaultController(IContactService contactService)

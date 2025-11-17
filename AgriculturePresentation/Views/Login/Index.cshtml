@@ -1,4 +1,4 @@
-﻿
+﻿@model AgriculturePresentation.Models.LoginViewModel
 @{
     Layout = null;
 }
@@ -35,10 +35,10 @@ Author URL: http://w3layouts.com
 					
 					<form method="post" class="signin-form">
 						<div class="form-input">
-							<input type="text" name="Username" placeholder="Username" required="" autofocus>
+							<input type="text" asp-for="username" placeholder="Username" required="" autofocus>
 						</div>
 						<div class="form-input">
-							<input type="password" name="password" placeholder="Password" required="">
+							<input type="password" asp-for="password" placeholder="Password" required="">
 						</div>
 						<label class="check-remaind">
 							<input type="checkbox">
